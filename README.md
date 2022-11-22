@@ -3,6 +3,7 @@
 This repository holds the python scripts and excel template input file used for the facility location optimization project done for ABF Freight Fall 2022 by Oklahoma State's IEM Senior Design Team: Caleb Triplett, Darcie Golden, and Grace Voth.
 
 The first python script, OSRM_Integration, connects to OSRM and writes all the distance calculations to an excel sheet to be used in the optimization python script. This script takes approximately 40 hours to run with Houston service area data.
+
 **To use OSRM_Integration:**
   1.	Specify the name of your input excel file
   2.	Name the output excel file
@@ -10,6 +11,7 @@ The first python script, OSRM_Integration, connects to OSRM and writes all the d
   4.	Input the latitude and longitude values of current SC
 
 The second python script, Optimization, finds the optimal SC location using Gurobi. This script takes anywhere from 30 seconds to 5 minutes to run with Houston service area data.
+
 **To use Optimization:**
   1.	Select the analysis type (Overall, City, Linehaul)
   2.	Select the type of cost to be used in the objective function (Distance, Duration, Weight)
